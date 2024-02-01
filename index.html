@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Stock</title>
+    <meta name="token" content="cza2zykhypa7th1s">
 </head>
+
 <body>
     Hello World!
+
+    <!--  A link that initiates a buy (market) of the SBIN stock //-->
+    <kite-button href="#" data-kite="cza2zykhypa7th1s" data-exchange="NSE" data-tradingsymbol="IDEA"
+        data-transaction_type="BUY" data-quantity="1" data-order_type="MARKET">Buy IDEA stock</kite-button>
+
+    <script src="https://kite.trade/publisher.js?v=3"></script>
+    <script>
+        KiteConnect.ready(function() {
+            console.log('Kite is ready!')
+        })
+    </script>
 </body>
+
 </html>
